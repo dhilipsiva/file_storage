@@ -1,10 +1,7 @@
-from django.conf.urls import patterns, include, url
-from django.contrib import admin
+from django.conf.urls import patterns, url
+from file_storage.views import index
 
-urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'file_storage.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
-    url(r'^admin/', include(admin.site.urls)),
+urlpatterns = patterns(
+    '',
+    url(r'^(?P<path>.*)$', index),
 )

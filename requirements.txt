@@ -1,0 +1,4 @@
+Django==1.7.1
+Unidecode==0.04.16
+django-sendfile==0.3.6
+wsgiref==0.1.2
